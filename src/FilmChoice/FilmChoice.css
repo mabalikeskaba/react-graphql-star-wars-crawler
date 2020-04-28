@@ -1,0 +1,23 @@
+.filmChoice {
+  padding: 10px;
+  position: relative;
+}
+
+.filmChoice select {
+  border: 1px solid lightgray;
+  height: 50px;
+  color: white;
+  background-color: gray;
+  border: 1px solid darkgray;
+  font-size: 18px;
+}
+
+.filmChoice button {
+  height: 50px;
+  width: 80px;
+  margin-left: 10px;
+  color: white;
+  background-color: gray;
+  border: 1px solid darkgray;
+  font-size: 18px;
+}
