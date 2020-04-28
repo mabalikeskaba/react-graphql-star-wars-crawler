@@ -2,7 +2,7 @@ import React from 'react';
 import Spinner from '../Spinner/Spinner';
 import { useQuery } from '@apollo/react-hooks';
 import gql from 'graphql-tag';
-// import './FilmChoice.css';
+import './FilmChoice.css';
 
 const getAllFilms = gql`
   query GetAllFilms {

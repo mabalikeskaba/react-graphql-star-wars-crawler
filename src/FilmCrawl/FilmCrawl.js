@@ -1,7 +1,7 @@
 import React from 'react';
 import { useQuery } from '@apollo/react-hooks';
 import gql from 'graphql-tag';
-// import './FilmCrawl.css';
+import './FilmCrawl.css';
 
 const getFilmById = gql`
   query GetFirstFilm($id: ID!) {
