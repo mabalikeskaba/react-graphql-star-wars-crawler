@@ -12,6 +12,10 @@
   font-size: 18px;
 }
 
+.filmChoice select:hover {
+  cursor: pointer;
+}
+
 .filmChoice button {
   height: 50px;
   width: 80px;
@@ -20,4 +24,9 @@
   background-color: gray;
   border: 1px solid darkgray;
   font-size: 18px;
+}
+
+.filmChoice button:hover {
+  background-color: rgb(98, 98, 98);
+  cursor: pointer;
 }
