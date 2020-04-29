@@ -1,8 +1,52 @@
+.crawlContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100vw;
+}
+
+.leftBorder {
+  flex-grow: 1;
+}
+
+.rightBorder {
+  flex-grow: 1;
+}
+
 .filmCrawl {
+  position: relative;
+  text-align: justify;
   font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
-  color: yellow;
-  height: 100%;
-  margin-top: 40px;
-  padding-left: 200px;
-  padding-right: 200px;
+  transform: perspective(300px) rotateX(25deg);
+  transform-origin: 50% 100%;
+  font-weight: bold;
+  font-size: 330%;
+  color: #fafa49;
+  /* position: absolute; */
+  width: 11em;
+  height: 14em;
+}
+
+.filmCrawlContent {
+  bottom: -75vh;
+  position: relative;
+  animation: scroll 96s, fade 96s linear 6s;
+  z-index: 0;
+}
+
+.filmCrawlTitle {
+  text-align: center;
+  font-size: 140%;
+}
+
+@keyframes scroll {
+  100% {
+    bottom: 200vh;
+  }
+}
+
+@keyframes fade {
+  100% {
+    color: black;
+  }
 }
