@@ -22,7 +22,6 @@
   font-weight: bold;
   font-size: 330%;
   color: #fafa49;
-  /* position: absolute; */
   width: 11em;
   height: 14em;
 }
@@ -30,7 +29,7 @@
 .filmCrawlContent {
   bottom: -75vh;
   position: relative;
-  animation: scroll 96s, fade 96s linear 6s;
+  animation: scroll 86s, fade 10s linear 76s;
   z-index: 0;
 }
 
