@@ -1,6 +1,7 @@
 import React from 'react';
 import FilmChoice from '../FilmChoice/FilmChoice';
 import FilmCrawl from '../FilmCrawl/FilmCrawl';
+import Star from '../Star/Star';
 
 import './App.css';
 
@@ -15,6 +16,7 @@ function App() {
 
   return (
     <div className='App'>
+      <Star>asd</Star>
       <FilmChoice onClick={handleFilmChoiceSubmit} />
       {isCrawling && <FilmCrawl id={crawlingFilmId} />}
     </div>
