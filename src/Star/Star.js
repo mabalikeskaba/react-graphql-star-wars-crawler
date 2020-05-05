@@ -8,6 +8,7 @@ function initStars(starAmount) {
     let rPos = getRandomPosition();
     let star = (
       <div
+        key={i}
         className='star'
         style={{
           top: rPos[0] + 'px',

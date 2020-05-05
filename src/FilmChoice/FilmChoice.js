@@ -17,11 +17,15 @@ const FilmChoice = ({ onClick }) => {
   const { data: filmData, loading: filmLoading, error: filmError } = useQuery(
     getAllFilms
   );
-  const firstFilm = filmData?.allFilms[0];
-  const [selectedFilm, setSelectedFilm] = React.useState(firstFilm?.id);
+
+  const [selectedFilm, setSelectedFilm] = React.useState(null);
   function onFilmChoiceChange(event) {
     setSelectedFilm(event.target.value);
   }
+
+  React.useEffect(() => {
+    setSelectedFilm(filmData?.allFilms[0].id);
+  }, [filmData]);
 
   if (filmLoading) return <Spinner />;
   if (filmError) return <span>Error!...</span>;
